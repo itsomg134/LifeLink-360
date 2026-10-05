@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeLink 360 - Eye Blink Communication</title>
+    <!-- MediaPipe Libraries for Face Tracking -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Inside index.html, replace your <header> with this -->
+<header>
+    <div class="header-content">
+        <!-- LEFT SIDE: The GIF / Image -->
+        <div class="gif-container">
+            <!-- Replace this src with the path to your actual GIF file -->
+            <!-- Example: <img src="doctor-hero.gif" alt="Doctor Hero" class="hero-gif"> -->
+            <!-- Using a placeholder for now -->
+            <img src="gif.gif" alt="Doctor Hero" class="hero-gif">
+        </div>
+        
+        <!-- RIGHT SIDE: Text -->
+        <div class="title-container">
+            <h1>LifeLink 360</h1>
+            <p id="status">Initializing camera...</p>
+        </div>
+    </div>
+</header>
+
+        <div class="video-wrapper">
+            <!-- The video feed is mirrored for the user's comfort -->
+            <video id="video" autoplay playsinline></video>
+            <div class="overlay-grid"></div>
+        </div>
+
+        <div id="message-display" class="message-box">
+            Waiting for blink...
+        </div>
+
+        <div class="controls">
+            <button id="test-btn">Test AI Connection (Simulate Blink)</button>
+        </div>
+
+        <div class="legend">
+            <h3>Blink Guide</h3>
+            <div class="legend-grid">
+                <p><strong>1 Blink:</strong> Hello dear</p>
+                <p><strong>2 Blinks:</strong> What do you want?</p>
+                <p><strong>3 Blinks:</strong> Yes, please</p>
+                <p><strong>4 Blinks:</strong> No, thank you</p>
+                <p><strong>Long Blink:</strong> I need water</p>
+                <p><strong>2 Long Blinks:</strong> I am in pain</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
