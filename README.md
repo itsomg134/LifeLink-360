@@ -26,27 +26,25 @@ The app turns any laptop or tablet into a **blink-controlled language tutor** �
 
 ---
 
-## 🚀 Live Demo
+## Live Demo
 
-🔗 **[Try LifeLink 360 Live](INSERT_YOUR_DIGITALOCEAN_URL_HERE)**
-
-🎥 **Watch the Demo Video:** [INSERT_YOUTUBE_OR_LOOM_LINK_HERE]
+ **[Try LifeLink 360 Live](https://lifelink-eight-indol.vercel.app/)**
 
 ---
 
-## ✨ Features
+##  Features
 
-- 👁️ **Real-time Eye Blink Detection** — Uses MediaPipe Face Mesh to track 468 facial landmarks in the browser.
-- 🧠 **16 Blink Patterns** — Single, double, triple, long blinks, and gazes map to different conversational prompts.
-- 🤖 **AI Language Tutor** — Powered by Backboard.io to generate contextual, patient responses in your target language.
-- 🔊 **Text-to-Speech Output** — Uses the native Web Speech API to speak responses out loud for pronunciation practice.
-- 📱 **Fully Hands-Free** — No keyboard, mouse, or touch required after starting the app.
-- 🌐 **Runs in the Browser** — No installation, no special hardware. Just a webcam.
-- ☁️ **Cloud-Ready** — Deployed on DigitalOcean App Platform with a scalable architecture for GPU inference.
+-  **Real-time Eye Blink Detection** — Uses MediaPipe Face Mesh to track 468 facial landmarks in the browser.
+-  **16 Blink Patterns** — Single, double, triple, long blinks, and gazes map to different conversational prompts.
+-  **AI Language Tutor** — Powered by Backboard.io to generate contextual, patient responses in your target language.
+-  **Text-to-Speech Output** — Uses the native Web Speech API to speak responses out loud for pronunciation practice.
+-  **Fully Hands-Free** — No keyboard, mouse, or touch required after starting the app.
+-  **Runs in the Browser** — No installation, no special hardware. Just a webcam.
+-  **Cloud-Ready** — Deployed on DigitalOcean App Platform with a scalable architecture for GPU inference.
 
 ---
 
-## 📖 Blink Guide
+##  Blink Guide
 
 | Blink Pattern | Action |
 | :--- | :--- |
@@ -62,11 +60,10 @@ The app turns any laptop or tablet into a **blink-controlled language tutor** �
 | **Right Wink** | "Call my family" |
 | **Rapid Blinks (3+)** | "Emergency! Help!" |
 
-> 💡 *The blink patterns are fully customizable — edit them in `app.js` to match your personal vocabulary list.*
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology | Purpose |
 | :--- | :--- | :--- |
@@ -79,7 +76,7 @@ The app turns any laptop or tablet into a **blink-controlled language tutor** �
 
 ---
 
-## ⚡ Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -88,47 +85,8 @@ The app turns any laptop or tablet into a **blink-controlled language tutor** �
 - A working **webcam**
 - A **Backboard.io API key** ([Get one free](https://app.backboard.io/dashboard/api-calls))
 
-### 1. Clone the Repository
 
-```bash
-git clone https://github.com/omgedam123098/lifelink-360.git
-cd lifelink-360
-```
-
-### 2. Install Dependencies
-
-```bash
-npm install
-```
-
-### 3. Configure Environment Variables
-
-Create a `.env` file in the project root:
-
-```env
-PORT=3000
-BACKBOARD_API_KEY=your_backboard_api_key_here
-```
-
-> ⚠️ **Never commit your `.env` file to GitHub.** It is already listed in `.gitignore`.
-
-### 4. Run the App
-
-```bash
-npm start
-```
-
-Open your browser and navigate to:
-
-```
-http://localhost:3000
-```
-
-**Allow camera permissions** when prompted. You're ready to start blinking! 👁️
-
----
-
-## 🧠 How It Works
+##  How It Works
 
 ### 1. Eye Blink Detection
 
@@ -164,7 +122,7 @@ The AI's response is displayed on screen **and** spoken aloud using the browser'
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 lifelink-360/
@@ -181,7 +139,7 @@ lifelink-360/
 
 ---
 
-## 🎨 Customization
+##  Customization
 
 ### Change the Target Language
 
@@ -217,13 +175,13 @@ case 5: message = "Can you repeat that?"; break;
 4. Add the environment variable `BACKBOARD_API_KEY` in the App Platform settings.
 5. Click **Create Resources** — your app will be live in ~2 minutes.
 
-### 🚀 Scaling with GPU Droplets
+###  Scaling with GPU Droplets
 
 For **100% private, low-latency inference**, deploy an open-weight model (e.g., Llama 3 8B) on a [DigitalOcean GPU Droplet](https://www.digitalocean.com/products/gpu-droplets) using the **1-Click Models** feature. Then update the API endpoint in `server.js` to point to your own inference server.
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Here's how:
 
@@ -235,7 +193,7 @@ Contributions are welcome! Here's how:
 
 ---
 
-## 👥 Team
+## Team
 
 | Name | DEV.to | GitHub |
 | :--- | :--- | :--- |
@@ -244,62 +202,32 @@ Contributions are welcome! Here's how:
 
 ---
 
-## 🏆 Hacktoberfest 2026 Submission
+##  Hacktoberfest 2026 Submission
 
 This project was built for the [Hacktoberfest Weekend Challenge: Build for a Friend](https://dev.to/challenges/hacktoberfest-weekend-2026-10-01).
 
 **Prize Categories:**
-- 🏅 Best Use of DigitalOcean
-- 🏅 Best Use of Backboard.io
+-  Best Use of DigitalOcean
+-  Best Use of Backboard.io
 
 📝 **[Read the full submission post →](INSERT_DEV_TO_LINK_HERE)**
 
 ---
 
-## 📜 License
+##  License
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 ---
+ usernames** for both team members
 
-## 🙏 Acknowledgments
-
-- [MediaPipe](https://developers.google.com/mediapipe) — Open-source face tracking
-- [Backboard.io](https://backboard.io/) — AI agent platform
-- [DigitalOcean](https://www.digitalocean.com/) — Cloud infrastructure
-- [Hacktoberfest](https://hacktoberfest.com/) — For inspiring open-source innovation
-
----
-
-<div align="center">
-
-**Made with ❤️ for learners everywhere.**
-
-⭐ Star this repo if you found it useful!
-
-</div>
-```
-
----
-
-### 📋 Before You Commit — Replace These Items:
-
-1. **`INSERT_YOUR_DIGITALOCEAN_URL_HERE`** → Your live app URL
-2. **`INSERT_YOUTUBE_OR_LOOM_LINK_HERE`** → Your demo video
-3. **`INSERT_DEV_TO_LINK_HERE`** → Your DEV.to submission post URL
-4. **Verify GitHub usernames** for both team members
-
-### 🎨 Optional: Add Screenshots
+### Screenshots
 
 For maximum impact, add a `screenshots/` folder to your repo and insert images like this:
 
 ```markdown
-## 📸 Screenshots
+##  Screenshots
 
 ![LifeLink 360 UI](screenshots/lifelink-ui.png)
 ![Doctor Hero GIF](screenshots/doctor-hero.gif)
 ```
-
-### 📜 Optional: Add a LICENSE File
-
-Create a `LICENSE` file in the root with the [MIT License text](https://opensource.org/licenses/MIT) to make your repo fully open-source and compliant with Hacktoberfest rules.
